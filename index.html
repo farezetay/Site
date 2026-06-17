@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Finder via Forem</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <h1 class="header__title">
+                    Job Finder via Forem
+                </h1>
+                <p class="header__subtitle">
+                    Trouvez votre prochain emploi facilement
+                </p>
+            </div>
+            <nav class="header__nav">
+                <button class="header__tab header__tab--active">
+                    Offres
+                </button>
+
+                <button class="header__tab">
+                    Favoris
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="search">
+            <form class="search__form" id="search__form">
+                <input type="text" class="search__input" name="search" placeholder="Ex : Développeur web, Comptable, Électricien...">
+                <button type="submit" class="search__button">
+                    Rechercher
+                </button>
+            </form>
+        </section>
+        <div class="content">
+            <aside class="filters" id="filters">
+                <h2 class="filters__title">
+                    Filtres
+                </h2>
+                <div class="filters__group">
+                    <label class="filters__label">
+                        Région
+                    </label>
+                    <select class="filters__select">
+                        <option>Toutes les régions</option>
+                        <option value="">WALLONE</option>
+                        <option value="">FLAMANDE</option>
+                        <option value="">BRUXELLES-CAPITALE</option>
+                    </select>
+                </div>
+                <div class="filters__group">
+                    <label class="filters__label">
+                        Langue
+                    </label>
+                    <select class="filters__select">
+                        <option>Toutes les langues</option>
+                        <option value="">Français</option>
+                        <option value="">Néerlandais</option>
+                        <option value="">Anglais</option>
+                    </select>
+                </div>
+                <div class="filters__group">
+                    <label class="filters__label">
+                        Type de contrat
+                    </label>
+                    <select class="filters__select">
+                        <option>Tous les contrats</option>
+                        <option value="">Intérimaire avec option sur CDI</option>
+                        <option value="">CDI</option>
+                        <option value="">CDD</option>
+                        <option value="">Intérimaire</option>
+                    </select>
+                </div>
+                <div class="filters__group">
+                    <label class="filters__label">
+                        Régime de travail
+                    </label>
+                    <select class="filters__select">
+                        <option>Tous les régimes</option>
+                        <option value="">Temps plein</option>
+                        <option value="">Temps partiel</option>
+                    </select>
+                    <button type="submit" class="filter__btn">Filtrer</button>
+                </div>
+            </aside>
+            <section class="jobs">
+                <div class="jobs__header">
+                    <h2 class="jobs__title">
+                        Offres d'emploi
+                    </h2>
+                </div>
+                <div class="jobs__list" id="offersList">
+
+
+                </div>
+            </section>
+            <div class="modale hidden" id="modale">
+              <p>hello</p>
+            </div>
+        </div>
+        <section class="favorites">
+            <div class="favorites__header">
+                <h2 class="favorites__title">
+                    Mes favoris
+                </h2>
+            </div>
+            <div class="favorites__list">
+                <!-- Offres favorites générées en JS -->
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
